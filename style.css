@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 
-
+:root {
+    --blue: #4dabf7;
+    
+  }
+  
 
 body{
 font-family: 'Montserrat', sans-serif;
@@ -38,7 +42,7 @@ a{
 }
 
 a:hover{
-    color: #4dabf7;
+    color: var(--blue);
     transition: all 0.1s ease-in-out;
 }
 
@@ -48,7 +52,7 @@ a::after{
   left: 0;
   bottom: -3px;
   border-radius: 5px;
-  background-color: #4dabf7;
+  background-color: var(--blue);
   width: 0%;
   height: 3px;
   transition: all 0.3s ease-in-out;
@@ -65,7 +69,7 @@ a:hover::after{
 section h1{
     padding: 5px;
     border: 3px dashed grey;
-    box-shadow: 0.5rem 0.5rem 0rem #4dabf7;
+    box-shadow: 0.5rem 0.5rem 0rem var(--blue);
 }
 
 
@@ -77,7 +81,7 @@ section{
     height: fit-content;
     padding-bottom: 40px;
     border-bottom: 3px dashed grey;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 /* about section */
@@ -100,7 +104,7 @@ section{
     
     width: 300px;
     border: 3px dashed grey;
-    padding: 20px;
+    padding: 40px;
 
     
 
@@ -108,7 +112,7 @@ section{
 
 #left-text:hover::after{
     content: 'sorry, im a man of few words';
-    color: #4dabf7;
+    color: var(--blue);
 }
 
 
@@ -136,12 +140,12 @@ section{
     font-family: inherit;
     font-size: 2rem;
     transition: all 0.2s ease-in-out;
-    box-shadow: 0.5rem 0.5rem 0rem #4dabf7;
+    box-shadow: 0.5rem 0.5rem 0rem var(--blue);
 
 }
 #about button:hover{
     cursor: pointer;
-   background-color: #8080e5;
+   background-color: var(--blue);
    color: white;
    box-shadow: 0.5rem 0.5rem 0rem grey;
 
@@ -167,7 +171,7 @@ section{
 
 .right h3:hover::after{
     content: 'for now...';
-    color: #4dabf7;
+    color: var(--blue);
 }
 
 .right img{
@@ -191,6 +195,12 @@ section{
     height: 200px;
     width: 400px;
     border: 3px dashed grey;
+    color: white;
+}
+
+.project img {
+    height: 100%;
+    width: 100%;
 }
 
 .info{
@@ -202,10 +212,20 @@ section{
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 
+
+}
+
+.info p{
+    margin: 5px;
+}
+
+.info span{
+   margin: 5px;
+    font-size: 0.8rem;
 }
 
 .project:hover .info{
-   height: 30%;
+   height: 40%;
    width: 100%;
 
 }
@@ -219,13 +239,13 @@ form{
     flex-direction: column;
     align-items: flex-start;
     border: 3px dashed grey;
-    box-shadow: 0.5rem 0.5rem 0rem #4dabf7;
+    box-shadow: 0.5rem 0.5rem 0rem var(--blue);
     width: fit-content;
 
 }
 
 input{
-    height: 2rem;
+    height: fit-content;
     width: 20rem;
     font-family: inherit;
     font-size: inherit;
@@ -233,4 +253,41 @@ input{
 
 #input-text{
     height: 6rem;
+}
+
+label{
+    margin-top: 10px;
+}
+
+form button{
+    margin: 30px;
+    padding: 0.5rem;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0.5rem 0.5rem 0rem var(--blue);
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: var(--blue);
+    color: white;
+    box-shadow: 0.5rem 0.5rem 0rem grey;
+}
+
+/* footer */
+ 
+
+footer{
+    height: 400px;
+    width: 100%;
+    border-bottom: 3px solid grey;
+    background-color: var(--blue);
+    color: black;
+    border-radius: 0px 0px 10px 10px;
+
+
 }
