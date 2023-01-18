@@ -1,5 +1,6 @@
-// let lefttext= document.getElementById("left-text")
+const responsive = document.getElementsByClassName("menu-responsive")[0]
+const burger = document.getElementById("burger")
 
-// lefttext.addEventListener("mouseover", ()=>{
-//     lefttext.innerText="Sorry, i'm a man of few words."
-// })
+burger.addEventListener ("click", ()=>{
+     responsive.classList.toggle("active")
+})
