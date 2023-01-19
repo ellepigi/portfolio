@@ -98,6 +98,7 @@ section h1{
 }
 
 
+
 section{
     display: flex;
     flex-direction: column;  
@@ -124,6 +125,10 @@ section{
    
 
 } */
+
+#about svg{
+    margin-bottom: 10px;
+}
 
 #left-text{
     
@@ -243,6 +248,8 @@ section{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.452);
     transition: all 0.3s ease-in-out;
+    padding-left: 10px;
+    box-sizing: border-box;
     overflow: hidden;
 
 
@@ -250,17 +257,19 @@ section{
 
 
 .project:hover .info{
-    height: 40%;
+    height: 50%;
     width: 100%;
  
  }
 
-.info p{
-    margin: 5px;
+#card-title {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 .info span{
-   margin: 5px;
+ 
     font-size: 0.8rem;
 }
 
