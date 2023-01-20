@@ -2,7 +2,6 @@
 
 :root {
     --blue: #4dabf7;
-    
   }
   
 
@@ -128,14 +127,18 @@ section{
 
 #about svg{
     margin-bottom: 10px;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    display: none;
 }
 
 #left-text{
     
-    width: 300px;
+    max-width: 500px;
     border: 3px dashed grey;
     padding: 40px;
-
+    box-sizing: border-box;
     
 
 }
@@ -166,7 +169,7 @@ section{
     display: flex;
     margin-top: 30px;
     align-items: center;
-    gap: 2rem;
+    
 }
 
 #about button{
@@ -234,6 +237,7 @@ section{
     width: 400px;
     border: 3px dashed grey;
     color: white;
+
 }
 
 .project img {
@@ -273,6 +277,13 @@ section{
     font-size: 0.8rem;
 }
 
+
+
+
+.info i{
+    position:  absolute;
+    bottom: 5px;
+}
 
 
 /* contact */
